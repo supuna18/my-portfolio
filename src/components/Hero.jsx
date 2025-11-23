@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImage from "../assets/profile.jpeg"; // 1. නම හරියටම දුන්නා (.jpeg)
+import heroImage from "../assets/profile.jpeg";  //Create heroImage variable
 
 export const Hero = () => {
   return (
