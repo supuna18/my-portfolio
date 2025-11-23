@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import heroImage from "../assets/profile.jpeg"; // 1. නම හරියටම දුන්නා (.jpeg)
 
 export const Hero = () => {
   return (
@@ -6,12 +7,12 @@ export const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center px-6 pt-20 overflow-hidden relative"
     >
-        {/* Background Blur Effect (පිටුපසින් තියෙන පාට එළිය) */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] -z-10"></div>
+      {/* Background Blur Effect */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] -z-10"></div>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
-        {/* 1. Left Side: Text Content */}
+        {/* Left Side: Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -41,21 +42,23 @@ export const Hero = () => {
           </div>
         </motion.div>
 
-        {/* 2. Right Side: Image */}
+        {/* Right Side: Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative flex justify-center"
         >
-            {/* Image Container with Glow */}
             <div className="relative w-80 h-80 md:w-96 md:h-96">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-600 rounded-full blur-2xl opacity-50 animate-pulse"></div>
+                
+                {/* 2. මෙන්න මෙතන තමයි අපි වෙනස් කරේ */}
                 <img 
-                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop" 
-                    alt="Profile" 
+                    src={heroImage}  
+                    alt="Supuna Anjana" 
                     className="relative w-full h-full object-cover rounded-full border-4 border-dark shadow-2xl z-10"
                 />
+                
             </div>
         </motion.div>
       </div>
