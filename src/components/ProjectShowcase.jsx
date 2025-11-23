@@ -1,0 +1,112 @@
+import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
+const projects = [
+  {
+    title: "E-Commerce Platform",
+    description: "A full-stack e-commerce application built with React and Java backend. Features include cart management, payment gateway integration, and user authentication.",
+    tech: ["React", "Java", "MySQL", "Tailwind"],
+    image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
+    github: "#",
+    live: "#",
+  },
+  {
+    title: "Task Management App",
+    description: "A drag-and-drop task manager inspired by Trello. Uses local storage for data persistence and smooth animations for task movements.",
+    tech: ["React", "Framer Motion", "MongoDB"],
+    image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?q=80&w=1000&auto=format&fit=crop",
+    github: "#",
+    live: "#",
+  },
+  {
+    title: "Weather Dashboard",
+    description: "Real-time weather forecast application using OpenWeatherMap API. Displays current conditions and 5-day forecast with dynamic backgrounds.",
+    tech: ["JavaScript", "API Integration", "CSS3"],
+    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=1000&auto=format&fit=crop",
+    github: "#",
+    live: "#",
+  },
+];
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2 },
+  },
+};
+
+const cardVariants = {
+  hidden: { y: 50, opacity: 0 },
+  visible: { y: 0, opacity: 1 },
+};
+
+// නම වෙනස් කළා ProjectShowcase විදිහට
+export const ProjectShowcase = () => {
+  return (
+    <section id="projects" className="py-20 bg-dark text-white">
+      <div className="max-w-7xl mx-auto px-6">
+        
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-primary text-lg font-bold tracking-wide uppercase mb-2">Portfolio</h2>
+          <h1 className="text-4xl md:text-5xl font-bold">Featured Projects</h1>
+        </motion.div>
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              variants={cardVariants}
+              whileHover={{ y: -10 }}
+              className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors duration-300 group"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                  <a href={project.github} className="p-3 bg-white text-dark rounded-full hover:bg-primary hover:text-white transition-colors">
+                    <FaGithub size={20} />
+                  </a>
+                  <a href={project.live} className="p-3 bg-white text-dark rounded-full hover:bg-primary hover:text-white transition-colors">
+                    <FaExternalLinkAlt size={20} />
+                  </a>
+                </div>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-gray-400 mb-4 line-clamp-3">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, i) => (
+                    <span key={i} className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
