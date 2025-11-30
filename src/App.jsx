@@ -1,19 +1,21 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
+import { About } from "./components/About"; // 1. අලුතින් Import කරා
 import { TechStack } from "./components/TechStack";
 import { ProjectShowcase } from "./components/ProjectShowcase";
-import { Contact } from "./components/Contact"; // 1. Contact Import
-import { Footer } from "./components/Footer";   // 2. Footer Import
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <div className="bg-dark min-h-screen text-white font-sans">
       <Navbar />
       <Hero />
+      <About />       {/* 2. Hero එකට යටින් About එක දැම්මා */}
       <TechStack />
       <ProjectShowcase />
-      <Contact /> {/* 3. Add Contact */}
-      <Footer />  {/* 4. Add Footer */}
+      <Contact />
+      <Footer />
     </div>
   );
 }
