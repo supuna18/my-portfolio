@@ -1,7 +1,37 @@
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
+  const form = useRef();
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    emailjs
+      .sendForm(
+        "service_7d6qhym",   // 1. Service ID එක (ඔයාගේ screenshot එකේ තිබ්බ එක දැම්මා)
+        "template_n885cww",  // 2. Template ID එක (ඔයාගේ screenshot එකේ තිබ්බ එක දැම්මා)
+        form.current,
+        "YOUR_PUBLIC_KEY"    // 3. මෙතනට ඔයාගේ PUBLIC KEY එක දාන්න (Account tab එකෙන් ගත්ත එක)
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setStatus("Message Sent Successfully!");
+          e.target.reset();
+          setTimeout(() => setStatus(""), 3000);
+        },
+        (error) => {
+          console.log(error.text);
+          setStatus("Failed to send message.");
+        }
+      );
+  };
+
   return (
     <section id="contact" className="py-20 bg-dark text-white relative overflow-hidden">
       
@@ -74,22 +104,40 @@ export const Contact = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="bg-white/5 p-8 rounded-2xl border border-white/10"
           >
-            <form className="space-y-6">
+            <form ref={form} onSubmit={sendEmail} className="space-y-6">
                 <div>
                     <label className="block text-sm font-medium text-gray-400 mb-2">Name</label>
-                    <input type="text" className="w-full bg-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Your Name" />
+                    <input 
+                      type="text" 
+                      name="user_name" 
+                      required 
+                      className="w-full bg-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" 
+                      placeholder="Your Name" 
+                    />
                 </div>
                 <div>
                     <label className="block text-sm font-medium text-gray-400 mb-2">Email</label>
-                    <input type="email" className="w-full bg-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="your@email.com" />
+                    <input 
+                      type="email" 
+                      name="user_email" 
+                      required 
+                      className="w-full bg-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" 
+                      placeholder="your@email.com" 
+                    />
                 </div>
                 <div>
                     <label className="block text-sm font-medium text-gray-400 mb-2">Message</label>
-                    <textarea rows="4" className="w-full bg-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Tell me about your project..."></textarea>
+                    <textarea 
+                      name="message" 
+                      rows="4" 
+                      required 
+                      className="w-full bg-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" 
+                      placeholder="Tell me about your project..."
+                    ></textarea>
                 </div>
 
-                <button className="w-full bg-gradient-to-r from-primary to-purple-600 text-white font-bold py-4 rounded-lg hover:scale-[1.02] transition-transform duration-300 flex items-center justify-center gap-2">
-                    Send Message <FaPaperPlane />
+                <button type="submit" className="w-full bg-gradient-to-r from-primary to-purple-600 text-white font-bold py-4 rounded-lg hover:scale-[1.02] transition-transform duration-300 flex items-center justify-center gap-2">
+                    {status ? status : <>Send Message <FaPaperPlane /></>}
                 </button>
             </form>
           </motion.div>
