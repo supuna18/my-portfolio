@@ -13,10 +13,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_7d6qhym",   // 1. Service ID එක (ඔයාගේ screenshot එකේ තිබ්බ එක දැම්මා)
-        "template_n885cww",  // 2. Template ID එක (ඔයාගේ screenshot එකේ තිබ්බ එක දැම්මා)
+        "service_7d6qhym",   // 1. Service ID 
+        "template_n885cww",  // 2. Template ID 
         form.current,
-        "YOUR_PUBLIC_KEY"    // 3. මෙතනට ඔයාගේ PUBLIC KEY එක දාන්න (Account tab එකෙන් ගත්ත එක)
+        "ni6nAralfx3fqeTTz"    // 3. Public key
       )
       .then(
         (result) => {
