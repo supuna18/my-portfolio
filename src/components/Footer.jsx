@@ -1,4 +1,4 @@
-// මෙන්න මේ "export" කියන වචනය තියෙන්නම ඕනේ
+
 export const Footer = () => {
   return (
     <footer className="bg-dark border-t border-white/10 py-8">

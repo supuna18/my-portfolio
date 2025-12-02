@@ -41,7 +41,7 @@ export const About = () => {
                 <button className="px-8 py-3 border border-primary text-primary rounded-lg font-medium hover:bg-primary hover:text-white transition-all duration-300">
                   Read More
                 </button>
-            </div>
+            </div>    
           </motion.div>
 
           {/* 2. Right Side: Stats Grid */}
@@ -70,4 +70,4 @@ export const About = () => {
       </div>
     </section>
   );
-};
+};     
