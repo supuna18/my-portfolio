@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-const projects = [
+const projects = [             //create the const  like projects of array 
   {
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce application built with React and Java backend. Features include cart management, payment gateway integration, and user authentication.",
@@ -28,20 +28,20 @@ const projects = [
   },
 ];
 
-const containerVariants = {
+const containerVariants = {       
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: { staggerChildren: 0.2 },
   },
-};
-
+};           
+ 
 const cardVariants = {
   hidden: { y: 50, opacity: 0 },
   visible: { y: 0, opacity: 1 },
 };
 
-// නම වෙනස් කළා ProjectShowcase විදිහට
+// changed the name as ProjectShowcase 
 export const ProjectShowcase = () => {
   return (
     <section id="projects" className="py-20 bg-dark text-white">
