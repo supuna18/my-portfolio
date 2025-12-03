@@ -1,43 +1,55 @@
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaAward, FaExternalLinkAlt, FaBriefcase } from "react-icons/fa";
+import { FaGraduationCap, FaAward, FaExternalLinkAlt } from "react-icons/fa";
 
 export const About = () => {
-  // Education Data
+  // Education Data - Updated with School Journey
   const education = [
     {
-      year: "2023 - Present",
+      year: "2024 - Present",
       title: "BSc (Hons) in Information Technology",
       place: "SLIIT",
-      desc: "Reading for my honors degree, focusing on full-stack development and software engineering principles."
+      desc: "Reading for my honors degree, specializing in Information Technology with a focus on Full Stack Development."
+    },
+    {
+      year: "2012 - 2022",
+      title: "G.C.E. Advanced Level (Physical Science)",
+      place: "Siridhamma College, Galle",
+      desc: "Successfully passed A/L exams in Physical Science stream. Achieved 9 Distinction passes (9A) in G.C.E. Ordinary Level examination."
+    },
+    {
+      year: "2007 - 2012",
+      title: "Primary Education",
+      place: "Dr. Richard Pathirana College, Galle",
+      desc: "Completed primary education and successfully passed the Grade 5 Scholarship Examination."
     }
   ];
 
   // Certifications Data
   const certifications = [
     { 
-      title: "API Fundamentals Student Expert", 
-      issuer: "Postman", 
-      year: "2024", 
-      link: "#" 
+      title: "Python for Beginners", 
+      issuer: "University of Moratuwa", 
+      year: "2025", 
+      link: "https://open.uom.lk/lms/mod/customcert/verify_certificate.php" 
     },
     { 
-      title: "AI Fundamentals", 
-      issuer: "IBM SkillsBuild", 
-      year: "2024", 
-      link: "#" 
+      title: "Web Design for Beginners", 
+      issuer: "Universit of Moratuwa", 
+      year: "2025", 
+      link: "https://open.uom.lk/lms/mod/customcert/verify_certificate.php" 
     },
     { 
-      title: "Introduction to IoT", 
-      issuer: "Cisco Networking Academy", 
-      year: "2023", 
-      link: "#" 
+      title: "Introduction to Responsible AI", 
+      issuer: "Google", 
+      year: "2025", 
+      link: "https://www.cloudskillsboost.google/public_profiles/749bfd80-7156-4d00-aaa5-c0508f1838a4/badges/13504443?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" 
     },
     { 
-      title: "Data Analytics Essentials", 
-      issuer: "Cisco", 
-      year: "2023", 
-      link: "#" 
-    }
+      title: "Introduction to Graphic Design; Basics of UI/UX", 
+      issuer: "Simplilearn", 
+      year: "2025", 
+      link: "https://simpli-web.app.link/e/0ZOYKuFjFUb" 
+    },
   ];
 
   return (
@@ -60,7 +72,7 @@ export const About = () => {
             {/* Center Line (Desktop Only) */}
             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-white/10 -translate-x-1/2"></div>
 
-            {/* 1. Left Column: Education & Experience */}
+            {/* 1. Left Column: Education Path */}
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -72,7 +84,7 @@ export const About = () => {
                     <FaGraduationCap className="text-primary text-3xl" /> Academic Background
                 </h3>
 
-                {/* Education Cards */}
+                {/* Education Cards (Timeline Style) */}
                 <div className="space-y-8">
                     {education.map((edu, index) => (
                         <div key={index} className="relative pl-8 border-l-2 border-primary/30">
@@ -88,14 +100,6 @@ export const About = () => {
                         </div>
                     ))}
                 </div>
-
-                {/* Experience (Optional - Future Use) */}
-                {/* <div className="pt-8">
-                    <h3 className="text-2xl font-bold flex items-center gap-3 text-white mb-6">
-                        <FaBriefcase className="text-primary text-3xl" /> Experience
-                    </h3>
-                    ... Internship details can go here ...
-                </div> */}
             </motion.div>
 
 
@@ -146,9 +150,15 @@ export const About = () => {
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
                 My journey is just beginning. I am eager to apply these skills in a professional environment.
             </p>
-            <button className="px-8 py-3 bg-gradient-to-r from-primary to-purple-600 text-white rounded-lg font-bold hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary/25">
+            
+            {/* Download Link - Make sure Supuna_CV.pdf is in your public folder */}
+            <a 
+                href="/Supuna_CV.pdf" 
+                download="Supuna_Anjana_CV.pdf"
+                className="inline-block px-8 py-3 bg-gradient-to-r from-primary to-purple-600 text-white rounded-lg font-bold hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary/25"
+            >
                 Download My CV
-            </button>
+            </a>
         </div>
 
       </div>
