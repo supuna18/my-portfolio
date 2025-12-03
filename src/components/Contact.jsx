@@ -11,7 +11,7 @@ export const Contact = () => {
     e.preventDefault();
     setStatus("Sending...");
 
-    emailjs                                       //Connect emailjs
+    emailjs                                       //Connect emailjs web server   
       .sendForm(
         "service_7d6qhym",   // 1. Service ID 
         "template_n885cww",  // 2. Template ID 
@@ -71,7 +71,7 @@ export const Contact = () => {
                     </div>
                     <div>
                         <p className="text-sm text-gray-400">Mail me</p>
-                        <p className="text-lg font-medium">supuna18.work@gmail.com</p>
+                        <p className="text-lg font-medium">supun18.work@gmail.com</p>
                     </div>
                 </div>
 
