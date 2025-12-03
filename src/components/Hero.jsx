@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
-import heroImage from "../assets/profile.jpeg";  //Create heroImage variable
+import heroImage from "../assets/profile.jpeg";  //Create heroImage variable and import the path
 
 export const Hero = () => {
+   const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section
       id="home"
@@ -33,8 +39,11 @@ export const Hero = () => {
           </p>
 
           <div className="flex gap-4">
-            <button className="px-8 py-3 bg-gradient-to-r from-primary to-purple-600 text-white rounded-lg font-medium hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary/25">
-              Contact Me
+             <button 
+              onClick={scrollToContact}
+              className="px-8 py-3 bg-gradient-to-r from-primary to-purple-600 text-white rounded-lg font-medium hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary/25 cursor-pointer"
+             >
+               Contact Me
             </button>
             <button className="px-8 py-3 border border-white/20 text-white rounded-lg font-medium hover:bg-white/5 hover:border-white transition-all duration-300">
               Download CV
