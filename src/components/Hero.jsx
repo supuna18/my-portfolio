@@ -1,13 +1,18 @@
 import { motion } from "framer-motion";
-import heroImage from "../assets/profile.jpeg";  //Create heroImage variable and import the path
+import heroImage from "../assets/profile.jpeg";
+// 1. Social Media Icons Import කරගත්තා
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 export const Hero = () => {
-   const scrollToContact = () => {                   //Link the contact button 
-    const contactSection = document.getElementById("contact");   
+  
+  // Contact Button Scroll Function
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <section
       id="home"
@@ -19,25 +24,30 @@ export const Hero = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left Side: Text Content */}
-        <motion.div     
+        <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
+          {/* 2. Professional Top Title */}
           <h2 className="text-primary text-lg font-bold tracking-wide uppercase mb-4">
-            Welcome to my world
+            Aspiring Full Stack Developer
           </h2>
+
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Hi, I'm <br />
             <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-              Supun Anjana 
+              Supun Anjana
             </span>
           </h1>
+
+          {/* 3. Professional Description (Tech Stack + Goal) */}
           <p className="text-gray-400 text-lg mb-8 max-w-lg">
-            Crafting high-performance digital experiences with a focus on functionality and user-centric design.
+            Transforming ideas into seamless web applications with modern technologies and clean code. 
+            Focused on creating smooth, user-friendly digital experiences.
           </p>
 
-          <div className="flex gap-4">
+          <div className="flex gap-4 mb-10">
              <button 
               onClick={scrollToContact}
               className="px-8 py-3 bg-gradient-to-r from-primary to-purple-600 text-white rounded-lg font-medium hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary/25 cursor-pointer"
@@ -48,6 +58,30 @@ export const Hero = () => {
               Download CV
             </button>
           </div>
+
+          {/* 4. Social Media Icons Section (New Addition) */}
+          <div className="flex gap-6 text-gray-400">
+            {/* GitHub Link */}
+            <a href="https://github.com/supuna18" target="_blank" rel="noopener noreferrer" className="hover:text-white text-3xl transition-colors duration-300">
+                <FaGithub />
+            </a>
+            
+            {/* LinkedIn Link */}   
+            <a href="https://www.linkedin.com/in/supun-anjana-9a74132a0/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 text-3xl transition-colors duration-300">
+                <FaLinkedin />
+            </a>
+            
+            {/* Facebook Link */}
+            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 text-3xl transition-colors duration-300">
+                <FaFacebook />
+            </a>
+            
+            {/* Instagram Link */}
+            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 text-3xl transition-colors duration-300">
+                <FaInstagram />
+            </a>
+          </div>
+
         </motion.div>
 
         {/* Right Side: Image */}
@@ -60,7 +94,6 @@ export const Hero = () => {
             <div className="relative w-80 h-80 md:w-96 md:h-96">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-600 rounded-full blur-2xl opacity-50 animate-pulse"></div>
                 
-                {/* 2. මෙන්න මෙතන තමයි අපි වෙනස් කරේ */}
                 <img 
                     src={heroImage}  
                     alt="Supuna Anjana" 
