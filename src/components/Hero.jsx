@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import heroImage from "../assets/profile.jpeg";  //Create heroImage variable and import the path
 
 export const Hero = () => {
-   const scrollToContact = () => {
-    const contactSection = document.getElementById("contact");
+   const scrollToContact = () => {                   //Link the contact button 
+    const contactSection = document.getElementById("contact");   
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -19,7 +19,7 @@ export const Hero = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left Side: Text Content */}
-        <motion.div
+        <motion.div     
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -30,12 +30,11 @@ export const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Hi, I'm <br />
             <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">
-              Supuna
+              Supun Anjana 
             </span>
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-lg">
-            I build high-performance web applications with React and Java. 
-            Focused on creating smooth animated UI/UX experiences.
+            Crafting high-performance digital experiences with a focus on functionality and user-centric design.
           </p>
 
           <div className="flex gap-4">
