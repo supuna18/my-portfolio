@@ -72,12 +72,12 @@ export const Hero = () => {
             </a>
             
             {/* Facebook Link */}
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 text-3xl transition-colors duration-300">
+            <a href="https://www.facebook.com/share/1D7oDCZzng/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 text-3xl transition-colors duration-300">
                 <FaFacebook />
             </a>
             
             {/* Instagram Link */}
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 text-3xl transition-colors duration-300">
+            <a href="https://www.instagram.com/supuna_18?igsh=MWp0NWZkMGZ5bXc3cg==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 text-3xl transition-colors duration-300">
                 <FaInstagram />
             </a>
           </div>
