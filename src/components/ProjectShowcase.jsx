@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-const projects = [             //create the const  like projects of array 
+const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Green Leaf Farm System",
     description: "A full-stack e-commerce application built with React and Java backend. Features include cart management, payment gateway integration, and user authentication.",
     tech: ["React", "Java", "MySQL", "Tailwind"],
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
-    github: "#",
-    live: "#",
+    // Image URL එක කෙලින්ම
+    image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?q=80&w=1000&auto=format&fit=crop",
+    github: "#", 
+    live: "https://smart-farm-system-deployed-frontend.onrender.com/", // Live Link 
   },
   {
     title: "Task Management App",
@@ -26,7 +27,7 @@ const projects = [             //create the const  like projects of array
     github: "#",
     live: "#",
   },
-];
+];    
 
 const containerVariants = {       
   hidden: { opacity: 0 },
@@ -41,7 +42,6 @@ const cardVariants = {
   visible: { y: 0, opacity: 1 },
 };
 
-// changed the name as ProjectShowcase 
 export const ProjectShowcase = () => {
   return (
     <section id="projects" className="py-20 bg-dark text-white">
@@ -71,22 +71,43 @@ export const ProjectShowcase = () => {
               whileHover={{ y: -10 }}
               className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors duration-300 group"
             >
+              {/* Image Section */}
               <div className="relative h-48 overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <a href={project.github} className="p-3 bg-white text-dark rounded-full hover:bg-primary hover:text-white transition-colors">
+                
+                {/* Links Section (Hover කළාම පේන කොටස) */}
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                  
+                  {/* GitHub Button */}
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-3 bg-white text-dark rounded-full hover:bg-primary hover:text-white transition-colors cursor-pointer"
+                    title="View Code"
+                  >
                     <FaGithub size={20} />
                   </a>
-                  <a href={project.live} className="p-3 bg-white text-dark rounded-full hover:bg-primary hover:text-white transition-colors">
+
+                  {/* Live Demo Button */}
+                  <a 
+                    href={project.live} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-3 bg-white text-dark rounded-full hover:bg-primary hover:text-white transition-colors cursor-pointer"
+                    title="View Live Site"
+                  >
                     <FaExternalLinkAlt size={20} />
                   </a>
+
                 </div>
               </div>
 
+              {/* Text Info */}
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
                   {project.title}
