@@ -28,7 +28,7 @@ const projects = [
     live: "#",
   },
   {
-    title: "Online Movie Booking System",
+    title: "Mind Relax Mobile App UI",
     description: "Real-time weather forecast application using OpenWeatherMap API. Displays current conditions and 5-day forecast with dynamic backgrounds.",
     tech: ["HTML", "JavaScript", "Tailwind","PHP"],
     image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1000&auto=format&fit=crop",
