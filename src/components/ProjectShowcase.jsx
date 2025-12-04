@@ -36,11 +36,11 @@ const projects = [
     live: "#",
   },
   {
-    title: "Financial Tracker Mboilt App Design",
+    title: "Financial Tracker Mobile App Design",
     description: "Real-time weather forecast application using OpenWeatherMap API. Displays current conditions and 5-day forecast with dynamic backgrounds.",
     tech: ["UI/UX", "Figma", "Prototyping"],
-    image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1000&auto=format&fit=crop",
-    github: "#",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+    github: "https://github.com/supuna18/Financial-App-Design",
     live: "#",
   },
   {
