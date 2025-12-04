@@ -44,9 +44,9 @@ const projects = [
     live: "#",
   },
   {
-    title: "Online Movie Booking System",
+    title: "Habit Tracker Mobile App",
     description: "Real-time weather forecast application using OpenWeatherMap API. Displays current conditions and 5-day forecast with dynamic backgrounds.",
-    tech: ["HTML", "JavaScript", "Tailwind","PHP"],
+    tech: ["Kotlin", "UI/UX", "Prototyping","Shared preferences"],
     image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1000&auto=format&fit=crop",
     github: "#",
     live: "#",
