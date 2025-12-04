@@ -6,9 +6,9 @@ const projects = [
     title: "Green Leaf Farm System",
     description: "A full-stack e-commerce application built with React and Java backend. Features include cart management, payment gateway integration, and user authentication.",
     tech: ["React", "Java", "MySQL", "Tailwind"],
-    // Image URL එක කෙලින්ම
+    // Image URL 
     image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?q=80&w=1000&auto=format&fit=crop",
-    github: "#", 
+    github: "https://lnkd.in/eA5N4hCP", 
     live: "https://smart-farm-system-deployed-frontend.onrender.com/", // Live Link 
   },
   {
