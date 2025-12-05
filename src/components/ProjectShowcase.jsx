@@ -7,25 +7,9 @@ const projects = [
   {
     title: "Green Leaf Farm System",
     shortDesc: "A full-stack Smart Farm Management System with e-commerce, payroll, and livestock tracking.",
-    // Green Leaf සඳහා දිග විස්තරේ
-    details: `🚀 Project Highlight: Smart Farm Management System
-
-A comprehensive farm management platform developed as a university group project. Our goal was to build a modern, cloud-powered solution that digitalizes core farm operations.
-
-🧩 Key Functionalities:
-• 🐄 Livestock Management - Register cows, track breed & DOB, milk production, and health.
-• 🌱 Crop Management - Manage fields, seasonal plans, fertilizer input.
-• 👨‍🌾 Employee & Workforce - Employee profiles, attendance, leave requests.
-• 💵 Payroll Automation - Salaries, allowances, deductions, and PDF reports.
-• 🛒 Online Store - Browse farm products, manage cart items.
-• 💳 Stripe Payment Gateway - Secure checkout & webhook-verified payments.
-• 🔐 Authentication - Secure login with JWT and Google OAuth.
-• ☁️ Cloud Integrations - Media uploads via Cloudinary.
-
-☁️ Tech Stack:
-Frontend: React (Vite), React Query, Tailwind CSS
-Backend: Node.js, Express.js, MongoDB
-Tools: Render, GitHub, Postman`,
+    // Green Leaf description
+    details: `Developed a comprehensive Smart Farm Management System using the MERN stack to digitalize livestock, crop, and employee operations. The platform features an automated payroll system and a fully functional online store integrated with Stripe for secure payments. 
+    It ensures high security and performance using JWT, Google OAuth, and Cloudinary for cloud data management.`,
     tech: ["MERN Stack", "Stripe", "Tailwind", "Cloudinary"],
     image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?q=80&w=1000&auto=format&fit=crop",
     github: "https://lnkd.in/eA5N4hCP",
