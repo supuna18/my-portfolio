@@ -65,7 +65,7 @@ Tools: Render, GitHub, Postman`,
     tech: ["UI/UX", "Figma", "Prototyping"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
     github: "https://github.com/supuna18/Financial-App-Design",
-    live: "#",
+    
   },
   {
     title: "Habit Tracker Mobile App",
@@ -74,7 +74,7 @@ Tools: Render, GitHub, Postman`,
     tech: ["Kotlin", "Android Studio", "Shared Preferences"],
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000&auto=format&fit=crop",
     github: "#",
-    live: "#",
+    
   },
 ];
 
