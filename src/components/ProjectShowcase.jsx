@@ -55,8 +55,7 @@ Tools: Render, GitHub, Postman`,
     details: "High-fidelity prototype designed in Figma for a meditation app. Features include a calming color palette, user-friendly navigation for breathing exercises, and progress tracking screens.",
     tech: ["UI/UX", "Figma", "Prototyping"],
     image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop",
-    github: "#",
-    live: "#",
+    github: "https://lnkd.in/gYpR7Cq7"
   },
   {
     title: "Financial Tracker App Design",
