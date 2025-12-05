@@ -6,7 +6,7 @@
 
 A modern, high-performance portfolio website built to showcase my skills and projects as an IT Undergraduate at SLIIT. Features a sleek **Glassmorphism** design, smooth animations, and a fully functional contact form.
 
-🚀 **Live Demo:** [මෙතනට උඹේ Vercel Link එක දාන්න]
+🚀 **Live Demo: 
 
 ---
 
