@@ -102,7 +102,7 @@ export const ProjectShowcase = () => {
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2}}
+              transition={{ duration: 0.8, delay: index * 0.3}}
               whileHover={{ y: -10 }}
               className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors duration-300 flex flex-col h-full group"
             >
