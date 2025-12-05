@@ -50,7 +50,7 @@ A modern and interactive portfolio website designed to showcase my skills, proje
 **[Supuna Anjana]**
 
 *   **Live Demo:** []
-*   **Connect on LinkedIn:** []
+*   **Connect on LinkedIn:** [www.linkedin.com/in/supun-anjana-bb26342a0]
 *   **Email:** supuna18.work@gmail.com
 
 ---
