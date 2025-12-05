@@ -1,16 +1,47 @@
-# React + Vite
+# 🌐 Supuna Anjana - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-Currently, two official plugins are available:
+A modern, high-performance portfolio website built to showcase my skills and projects as an IT Undergraduate at SLIIT. Features a sleek **Glassmorphism** design, smooth animations, and a fully functional contact form.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 **Live Demo:** [මෙතනට උඹේ Vercel Link එක දාන්න]
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+- 🎨 **Modern UI:** Glassmorphism effect with glowing gradients.
+- ⚡ **Fast & Responsive:** Built with Vite & Tailwind CSS (Works on Mobile & Desktop).
+- 🎬 **Smooth Animations:** Powered by Framer Motion for interactive elements.
+- 📧 **Contact Form:** Working email system using EmailJS (Directly sends emails).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js + Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** React Icons
+- **Email Service:** EmailJS
+
+---
+
+## 🚀 How to Run Locally
+
+If you want to run this project on your machine, just run these commands:
+
+```bash
+# 1. Install Dependencies
+npm install
+
+# 2. Run the App
+npm run dev
+
+👨‍💻 Author
+Supuna Anjana
+Email: supuna18.work@gmail.com
+LinkedIn: 
+GitHub: 
