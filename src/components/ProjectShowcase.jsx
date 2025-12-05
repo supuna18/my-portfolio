@@ -2,12 +2,11 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
-// 1. Updated Project Data
+// 1. Projects Data
 const projects = [
   {
     title: "Green Leaf Farm System",
     shortDesc: "A full-stack Smart Farm Management System with e-commerce, payroll, and livestock tracking.",
-    // Green Leaf description
     details: `Developed a comprehensive Smart Farm Management System using the MERN stack to digitalize livestock, crop, and employee operations. The platform features an automated payroll system and a fully functional online store integrated with Stripe for secure payments. 
     It ensures high security and performance using JWT, Google OAuth, and Cloudinary for cloud data management.`,
     tech: ["MERN Stack", "Stripe", "Tailwind", "Cloudinary"],
@@ -40,6 +39,7 @@ const projects = [
     tech: ["UI/UX", "Figma", "Prototyping"],
     image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop",
     github: "https://lnkd.in/gYpR7Cq7"
+    // live link removed
   },
   {
     title: "Financial Tracker App Design",
@@ -48,7 +48,7 @@ const projects = [
     tech: ["UI/UX", "Figma", "Prototyping"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
     github: "https://github.com/supuna18/Financial-App-Design",
-    
+    // live link removed
   },
   {
     title: "Habit Tracker Mobile App",
@@ -56,8 +56,8 @@ const projects = [
     details: "A native Android application developed using Kotlin. It uses Shared Preferences for local data storage to track daily habits, streaks, and completion rates.",
     tech: ["Kotlin", "Android Studio", "Shared Preferences"],
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000&auto=format&fit=crop",
-    github: "#",
-    
+    github: "https://github.com/supuna18/HbbitTracker", // මෙතනට ඔයාගේ ඇත්ත Link එක දාන්න, එතකොට Button එක මතු වෙයි.
+    // live link removed
   },
 ];
 
@@ -90,7 +90,7 @@ export const ProjectShowcase = () => {
               whileHover={{ y: -10 }}
               className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors duration-300 flex flex-col h-full group"
             >
-              {/* Image Section (Click to Open Modal) */}
+              {/* Image Section */}
               <div 
                 className="relative h-48 overflow-hidden cursor-pointer" 
                 onClick={() => setSelectedProject(project)}
@@ -172,7 +172,7 @@ export const ProjectShowcase = () => {
               {/* Scrollable Content */}
               <div className="overflow-y-auto custom-scrollbar flex flex-col md:flex-row h-full">
                 
-                {/* Left Side: Image (Sticky on Desktop) */}
+                {/* Left Side: Image */}
                 <div className="md:w-2/5 h-64 md:h-auto relative shrink-0">
                     <img 
                         src={selectedProject.image} 
@@ -201,9 +201,11 @@ export const ProjectShowcase = () => {
                         {selectedProject.details}
                     </div>
 
-                    {/* Action Buttons */}
+                    {/* Action Buttons (Logic Updated Here) */}
                     <div className="flex gap-4 mt-auto pt-6 border-t border-white/10">
-                        {selectedProject.github !== "#" && (
+                        
+                        {/* Source Code Button: පෙන්නන්නේ Link එකක් තිබුනොත් සහ එය # නොවුනොත් පමණි */}
+                        {selectedProject.github && selectedProject.github !== "#" && (
                             <a 
                                 href={selectedProject.github} 
                                 target="_blank" 
@@ -214,7 +216,8 @@ export const ProjectShowcase = () => {
                             </a>
                         )}
                         
-                        {selectedProject.live !== "#" && (
+                        {/* Live Demo Button: පෙන්නන්නේ Link එකක් තිබුනොත් සහ එය # නොවුනොත් පමණි */}
+                        {selectedProject.live && selectedProject.live !== "#" && (
                             <a 
                                 href={selectedProject.live} 
                                 target="_blank" 
