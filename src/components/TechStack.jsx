@@ -26,7 +26,7 @@ const itemVariants = {
   visible: { y: 0, opacity: 1 },
 };
 
-// නම වෙනස් කළා TechStack විදිහට
+// change name like TechStack 
 export const TechStack = () => {
   return (
     <section id="skills" className="py-20 bg-dark relative overflow-hidden">
