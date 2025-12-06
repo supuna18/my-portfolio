@@ -1,7 +1,7 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About"; // 1. අලුතින් Import කරා
-import { TechStack } from "./components/TechStack";
+import { MySkills } from "./components/MySkills";
 import { ProjectShowcase } from "./components/ProjectShowcase";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />       {/* 2. Hero එකට යටින් About එක දැම්මා */}
-      <TechStack />
+      <MySkills />
       <ProjectShowcase />
       <Contact />
       <Footer />
