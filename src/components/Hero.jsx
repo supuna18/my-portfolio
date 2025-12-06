@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import heroImage from "../assets/profile.jpeg";
-// 1. Social Media Icons Import කරගත්තා
+// 1. Import the social media icons
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 export const Hero = () => {
