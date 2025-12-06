@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FaJava, FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiMysql, SiTailwindcss, SiPostman } from "react-icons/si"
 
+//Add skills icons 
 const skills = [
  { name: "Java", icon: <FaJava />, color: "#ed8b00" },
   { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
