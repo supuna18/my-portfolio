@@ -5,7 +5,7 @@ import { TechStack } from "./components/TechStack";
 import { ProjectShowcase } from "./components/ProjectShowcase";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { ChatBot } from "./components/ChatBot"; 
+import { SupunAssistant } from "./components/SupunAssistant"; 
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <ProjectShowcase />
       <Contact />
       <Footer />
-      <ChatBot />
+      <SupunAssistant />
     </div>
   );
 }
