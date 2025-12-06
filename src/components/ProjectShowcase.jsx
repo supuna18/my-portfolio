@@ -56,7 +56,7 @@ const projects = [
     details: "A native Android application developed using Kotlin. It uses Shared Preferences for local data storage to track daily habits, streaks, and completion rates.",
     tech: ["Kotlin", "Android Studio", "Shared Preferences"],
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000&auto=format&fit=crop",
-    github: "https://github.com/supuna18/HbbitTracker", // මෙතනට ඔයාගේ ඇත්ත Link එක දාන්න, එතකොට Button එක මතු වෙයි.
+    github: "https://github.com/supuna18/HbbitTracker", 
     // live link removed
   },
 ];
@@ -204,7 +204,7 @@ export const ProjectShowcase = () => {
                     {/* Action Buttons (Logic Updated Here) */}
                     <div className="flex gap-4 mt-auto pt-6 border-t border-white/10">
                         
-                        {/* Source Code Button: පෙන්නන්නේ Link එකක් තිබුනොත් සහ එය # නොවුනොත් පමණි */}
+                        {/* Source Code Button display*/}
                         {selectedProject.github && selectedProject.github !== "#" && (
                             <a 
                                 href={selectedProject.github} 
@@ -216,7 +216,7 @@ export const ProjectShowcase = () => {
                             </a>
                         )}
                         
-                        {/* Live Demo Button: පෙන්නන්නේ Link එකක් තිබුනොත් සහ එය # නොවුනොත් පමණි */}
+                        {/* Live Demo Button display*/}
                         {selectedProject.live && selectedProject.live !== "#" && (
                             <a 
                                 href={selectedProject.live} 
