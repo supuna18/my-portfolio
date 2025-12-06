@@ -10,7 +10,7 @@ export default async function handler(req, res) {
 
   try {
     const { message } = req.body;
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
     // 2. Bot ගේ චරිතය (System Prompt) - මෙතන තමයි Bot ගේ මොළය තියෙන්නේ
     const prompt = `
