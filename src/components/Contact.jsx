@@ -11,7 +11,7 @@ export const Contact = () => {
     e.preventDefault();
     setStatus("Sending...");
 
-    emailjs                                       //Connect emailjs web server   
+    emailjs                                        //Connect emailjs web server   
       .sendForm(
         "service_7d6qhym",   // 1. Service ID 
         "template_n885cww",  // 2. Template ID 
@@ -81,7 +81,7 @@ export const Contact = () => {
                     </div>
                     <div>
                         <p className="text-sm text-gray-400">Call me</p>
-                        <p className="text-lg font-medium">+94 77 123 4567</p>
+                        <p className="text-lg font-medium">+94 77 476 2877</p>
                     </div>
                 </div>
 
