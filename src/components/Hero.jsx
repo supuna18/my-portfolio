@@ -36,7 +36,7 @@ export const Hero = () => {
 
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Hi, I'm <br />
-            <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">
+            <span className="text-[#3b82f6]">
               Supun Anjana
             </span>
           </h1>
