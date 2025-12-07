@@ -5,30 +5,3 @@
 html {
   scroll-behavior: smooth;
 }
-/* 2. Global Settings (පැද්දෙන එක නවත්තන්න) */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden; /* මෙන්න මේකෙන් තමයි Screen එක එහා මෙහා වෙන එක නවතින්නේ */
-  background-color: #0f172a; /* යටින් සුදු පාට පේන එක නවත්තන්න Background එක Dark කළා */
-  scroll-behavior: smooth; /* Smooth Scroll */
-}
-
-/* 3. Custom Scrollbar (Scroll Bar එක ලස්සන කරන්න) */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0f172a; /* පිටුපස පාට */
-}
-
-::-webkit-scrollbar-thumb {
-  background: #3b82f6; /* Scroll කරන කෑල්ල නිල් පාටින් */
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
-}
