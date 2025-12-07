@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 export default async function handler(req, res) {
-  // 1. POST request එකක් දැයි බලනවා
+  // 1. check the POST request 
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
