@@ -136,7 +136,7 @@ export const Contact = () => {
                     ></textarea>
                 </div>
 
-                <button type="submit" className="w-full bg-gradient-to-r from-primary to-purple-600 text-white font-bold py-4 rounded-lg hover:scale-[1.02] transition-transform duration-300 flex items-center justify-center gap-2">
+                <button type="submit" className="px-8 py-3 bg-[#2563eb] text-white rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30">
                     {status ? status : <>Send Message <FaPaperPlane /></>}
                 </button>
             </form>
