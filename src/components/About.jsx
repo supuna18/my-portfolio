@@ -155,7 +155,7 @@ export const About = () => {
             <a 
                 href="/Supuna_CV.pdf" 
                 download="Supuna_Anjana_CV.pdf"
-                className="inline-block px-8 py-3 bg-gradient-to-r from-primary to-purple-600 text-white rounded-lg font-bold hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary/25"
+                className="px-8 py-3 bg-[#2563eb] text-white rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
             >
                 Download My CV
             </a>
