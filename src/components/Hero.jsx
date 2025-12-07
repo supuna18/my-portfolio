@@ -54,7 +54,7 @@ export const Hero = () => {
              >
                Contact Me
             </button>
-            <button className="px-8 py-3 border border-white/20 text-white rounded-lg font-medium hover:bg-white/5 hover:border-white transition-all duration-300">
+            <button className="px-8 py-3 border border-white/30 text-white rounded-lg font-medium hover:bg-white/10 transition-all">
               Download CV
             </button>
           </div>
