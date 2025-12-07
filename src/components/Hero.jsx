@@ -50,7 +50,7 @@ export const Hero = () => {
           <div className="flex gap-4 mb-10">
              <button 
               onClick={scrollToContact}
-              className="px-8 py-3 bg-gradient-to-r from-primary to-purple-600 text-white rounded-lg font-medium hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary/25 cursor-pointer"
+              className="px-8 py-3 bg-[#2563eb] text-white rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
              >
                Contact Me
             </button>
