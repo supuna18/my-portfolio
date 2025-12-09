@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html ,body {
   scroll-behavior: smooth;
+  width:100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+#root{
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
