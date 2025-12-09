@@ -16,6 +16,6 @@ html, body {
 }
 
 #root {
-  min-height: 100vh; /* min-h-screen වෙනුවට මේක දාන්න */
+  min-height: 100vh; /* min-h-screen  */
   overflow-x: hidden;
 }
