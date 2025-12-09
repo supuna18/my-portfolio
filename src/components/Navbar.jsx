@@ -24,7 +24,7 @@ export const Navbar = () => {
           transition={{ duration: 0.5 }}
           className="text-2xl font-bold bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent cursor-pointer"
         >
-          Supun<span className="text-white"></span>
+          Supun Anjana<span className="text-white"></span>
         </motion.div>
 
         {/* 2. Desktop Menu (Hidden on Mobile) */}
