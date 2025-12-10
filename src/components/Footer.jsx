@@ -3,7 +3,7 @@ export const Footer = () => {
     <footer className="bg-dark border-t border-white/10 py-8">
       <div className="max-w-7xl mx-auto px-6 text-center">
         
-        {/* නිකන්ම Copyright එක විතරක් තියන්න */}
+        {/* Copyright only */}
         <p className="text-gray-400">
           © {new Date().getFullYear()} Supuna Anjana. All rights reserved.
         </p>
