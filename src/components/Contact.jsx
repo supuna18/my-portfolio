@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
-import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser"; //Import emailJS
 
 export const Contact = () => {
   const form = useRef();
@@ -50,7 +50,7 @@ export const Contact = () => {
           <h1 className="text-4xl md:text-5xl font-bold">Contact Me</h1>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-12">   
           
           {/* 1. Contact Info */}
           <motion.div
