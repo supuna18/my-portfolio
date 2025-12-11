@@ -5,7 +5,7 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Menu Items
+  // Menu Items display
   const menuItems = [
     { title: "Home", href: "#home" },
     { title: "About", href: "#about" },
