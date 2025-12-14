@@ -15,7 +15,7 @@ export const Hero = () => {
 
   return (
     <section
-      id="home" //id
+      id="home" //id added
       className="min-h-screen flex items-center justify-center px-6 pt-20 overflow-hidden relative"
     >
       {/* Background Blur Effect */}
