@@ -60,7 +60,7 @@ export const Navbar = () => {
                   key={index}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-gray-300 hover:text-white text-lg font-medium transition-colors"
+                  className="text-gray-300 hover:text-white text-lg font-medium transition-colors"  //transition colors 
                 >
                   {item.title}
                 </a>
