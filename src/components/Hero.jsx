@@ -55,7 +55,7 @@ export const Hero = () => {
                Contact Me
             </button>
             <a 
-              href="/Supun_Anjana_CV.pdf" 
+              href="/Supun_CV_2025.pdf" 
               download
               className="px-8 py-3 border border-white/30 text-white rounded-lg font-medium hover:bg-white/10 transition-all cursor-pointer text-center"
             >
