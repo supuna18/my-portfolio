@@ -153,13 +153,13 @@ export const About = () => {
             
             {/* Download Link - Make sure Supuna_CV.pdf is in your public folder */}
             <a 
-                href="/Supuna_CV.pdf" 
+                href="/Supun_Anjana_CV.pdf" 
                 download="Supuna_Anjana_CV.pdf"
                 className="px-8 py-3 bg-[#2563eb] text-white rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
             >
                 Download My CV
             </a>
-        </div>
+        </div> 
 
       </div>
     </section>
