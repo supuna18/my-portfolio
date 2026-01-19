@@ -2,33 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/supunFav.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/AnjanaFav.png" />
+
+    <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="google-site-verification" content="dDHY7w2KdAQ3SfpHDW1wvov3lGEpIGRxS7av0SaiCTg" /> <!-- Google verification -->
-    
-    <!-- Google Fonts Setup (Outfit Font) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="dDHY7w2KdAQ3SfpHDW1wvov3lGEpIGRxS7av0SaiCTg"
+    />
 
+    <!-- Google Fonts (Outfit) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Title -->
     <title>Supun Anjana | Full-Stack Developer</title>
 
-    <meta name="description" content="Supun Anjana - Software Engineer Intern based in Sri Lanka. Full Stack Developer specializing in React, Java, and MERN Stack." />
-    <meta name="keywords" content="Supun Anjana, Software Engineer, Portfolio, Sri Lanka, React Developer, Java Developer, Full Stack" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Supun Anjana is a Software Engineer Intern and Full Stack Developer based in Sri Lanka, specializing in React, Java, and MERN Stack."
+    />
+    <meta
+      name="keywords"
+      content="Supun Anjana, Software Engineer Intern, Full Stack Developer, React Developer, Java Developer, MERN Stack, Portfolio, Sri Lanka"
+    />
     <meta name="author" content="Supun Anjana" />
 
-    <!-- Open Graph / Facebook & LinkedIn වලට Link එක දාද්දී පේන විදිහ -->
+    <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:title" content="Supun Anjana | Software Engineer Intern" />
-    <meta property="og:description" content="Check out my personal portfolio. Specialized in React, Java & Modern UI/UX." />
-    <meta property="og:image" content="/favicon.png" />
+    <meta
+      property="og:description"
+      content="Explore my personal portfolio showcasing projects, skills, and experience in Full Stack Development."
+    />
+    <meta
+      property="og:image"
+      content="https://supunanjana.vercel.app/AnjanaFav.png"
+    />
     <meta property="og:url" content="https://supunanjana.vercel.app/" />
     <meta property="og:type" content="website" />
-    
 
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Supun Anjana",
+        "url": "https://supunanjana.vercel.app",
+        "image": "https://supunanjana.vercel.app/supunFav.png",
+        "jobTitle": "Software Engineer Intern",
+        "sameAs": [
+          "https://github.com/supuna18",
+          "https://www.linkedin.com/in/supun-anjana-bb26342a0",
+          "https://www.instagram.com/supuna_18",
+          "https://www.facebook.com/share/1H7Yt6RY4d/"
+        ]
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- React Entry -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
