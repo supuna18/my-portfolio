@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- Favicon -->
+    <!-- 1. Favicon Setup (මේ විදිහට sizes දාන්න) -->
     <link rel="icon" type="image/png" href="/AnjanaFav.png" />
+    <!-- Google එකට ලොකු අයිකන් එකක් ඕන නිසා මේකත් දාන්න -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/AnjanaFav.png" />
+    <link rel="apple-touch-icon" href="/AnjanaFav.png" />
 
-    <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Site Verification -->
     <meta
       name="google-site-verification"
       content="dDHY7w2KdAQ3SfpHDW1wvov3lGEpIGRxS7av0SaiCTg"
     />
 
-    <!-- Google Fonts (Outfit) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,10 +23,8 @@
       rel="stylesheet"
     />
 
-    <!-- Title -->
     <title>Supun Anjana | Full-Stack Developer</title>
 
-    <!-- SEO Meta Tags -->
     <meta
       name="description"
       content="Supun Anjana is a Software Engineer Intern and Full Stack Developer based in Sri Lanka, specializing in React, Java, and MERN Stack."
@@ -37,7 +35,6 @@
     />
     <meta name="author" content="Supun Anjana" />
 
-    <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:title" content="Supun Anjana | Software Engineer Intern" />
     <meta
       property="og:description"
@@ -50,14 +47,14 @@
     <meta property="og:url" content="https://supunanjana.vercel.app/" />
     <meta property="og:type" content="website" />
 
-    <!-- Structured Data (Schema.org) -->
+    <!-- 2. Schema එකේ නම හැදුවා (AnjanaFav.png විදිහට) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Supun Anjana",
         "url": "https://supunanjana.vercel.app",
-        "image": "https://supunanjana.vercel.app/supunFav.png",
+        "image": "https://supunanjana.vercel.app/AnjanaFav.png", 
         "jobTitle": "Software Engineer Intern",
         "sameAs": [
           "https://github.com/supuna18",
@@ -71,8 +68,6 @@
 
   <body>
     <div id="root"></div>
-
-    <!-- React Entry -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
