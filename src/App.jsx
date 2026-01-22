@@ -5,7 +5,7 @@ import { MySkills } from "./components/MySkills";
 import { ProjectShowcase } from "./components/ProjectShowcase";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { SupunAssistant } from "./components/SupunAssistant"; 
+import { SupunAssistant } from "./components/SupunAssistant"; //ai assistant එක
 
 function App() {
   return (
