@@ -1,6 +1,6 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
-import { About } from "./components/About"; // 1. අලුතින් Import කරා
+import { About } from "./components/About"; // 1. අලුතින් Import කරා all About component එක
 import { MySkills } from "./components/MySkills";
 import { ProjectShowcase } from "./components/ProjectShowcase";
 import { Contact } from "./components/Contact";
