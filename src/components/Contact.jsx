@@ -11,7 +11,7 @@ export const Contact = () => {
     e.preventDefault();
     setStatus("Sending...");
 
-    emailjs                                        //Connect emailjs web server   
+    emailjs                                        //Connect  to the emailjs web server   
       .sendForm(
         "service_7d6qhym",   // 1. Service ID 
         "template_n885cww",  // 2. Template ID 
