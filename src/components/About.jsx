@@ -36,7 +36,7 @@ export const About = () => {
       title: "Web Design for Beginners", 
       issuer: "Universit of Moratuwa", 
       year: "2025", 
-      link: "https://open.uom.lk/lms/mod/customcert/verify_certificate.php" 
+      link: "https://open.uom.lk/lms/mod/customcert/verify_certificate.php" //Link
     },
     { 
       title: "Introduction to Responsible AI", 
