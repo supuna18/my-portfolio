@@ -5,7 +5,7 @@ export const Footer = () => {
         
         {/* Copyright only */}
         <p className="text-gray-400">
-          © {new Date().getFullYear()} Supuna Anjana. All rights reserved.
+          © {new Date().getFullYear()} Supun Anjana. All rights reserved.
         </p>
 
       </div>
