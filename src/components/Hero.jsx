@@ -31,7 +31,7 @@ export const Hero = () => {
         >
           {/* 2. Professional Top Title */}
           <h2 className="text-primary text-lg font-bold tracking-wide uppercase mb-4">
-            Aspiring Full Stack Developer
+            ASPIRING QA AUTOMATION ENGINEER
           </h2>
 
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
@@ -43,8 +43,7 @@ export const Hero = () => {
 
           {/* 3. Professional Description (Tech Stack + Goal) */}
           <p className="text-gray-400 text-lg mb-8 max-w-lg">
-            Transforming ideas into seamless web applications with modern technologies and clean code. 
-            Focused on creating smooth, user-friendly digital experiences.
+            Information Technology undergraduate with hands-on experience in software testing and web development. Passionate about ensuring software quality, exploring test automation, and delivering reliable, user-friendly digital experiences.
           </p>
 
           <div className="flex gap-4 mb-10">
